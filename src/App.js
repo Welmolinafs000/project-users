@@ -28,7 +28,7 @@ const App = () => {
     <Container>
       <Image src={People} alt="people" />
       <ContainerItens>
-        <Title> Hello !!!</Title>
+        <Title> Oi !!! !!!</Title>
 
         <InputLabel>Nome</InputLabel>
         <Input ref={inputName} placeholder="Nome" />
