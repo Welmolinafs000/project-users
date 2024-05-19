@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import backgraound from './assets/background.svg'
+import backgraound from '../../assets/background.svg'
 
 export const Container = styled.div`
     background: url("${backgraound}");
@@ -78,6 +78,7 @@ export const Input = styled.input`
 export const Button = styled.button`
     width: 342px;
     height: 74px;
+    margin-top: 130px;
 
     border-radius: 14px ;
     background: #000000CC;
@@ -101,42 +102,5 @@ export const Button = styled.button`
     &:active {
         opacity: 0.5;
     }
-`
-
-export const User = styled.li`
-    display: flex;
-    justify-content: space-around;  
-    align-items: center;
-    background: #FFFFFF40;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    width: 342px;
-    height: 58px;
-    outline: none;
-    border: none;
-    margin-top: 20px;
-
-    p {
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 28.13px;
-        color: #ffffff;
-    }
-
-
-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-
-    &:hover {
-        opacity: 0.8;
-    }
-
-    &:active {
-        opacity: 0.5;
-    }
-}
-
 `
 
