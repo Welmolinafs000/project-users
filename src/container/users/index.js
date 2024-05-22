@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
+import { useNavigate } from "react-router-dom";
 
 import { Container, Image, ContainerItens, Title, Button, User } from './styles';
 import Avatar from '../../assets/avatar.svg';
@@ -9,6 +10,9 @@ import Trash from '../../assets/trash.svg'
 
 const Users = () => {
   const [users, setUsers] = useState([])
+  const navigate = useNavigate()
+
+  console.log(navigate)
 
   useEffect(() => {
     const fatchUsers = async () => {
@@ -23,6 +27,10 @@ const Users = () => {
     const newUsers = users.filter(user => user.id !== userId)
 
     setUsers(newUsers)
+  }
+
+  const goBackPage = () => {
+    navigate("/")
   }
 
   return (
@@ -42,7 +50,7 @@ const Users = () => {
           ))}
         </ul>
 
-        <Button >
+        <Button onClick={goBackPage} >
         <img src={Arrow} alt="seta" /> Back
         </Button>
       </ContainerItens>

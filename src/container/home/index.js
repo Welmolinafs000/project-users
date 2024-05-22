@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import axios from 'axios';
+import { useNavigate } from "react-router-dom";
 
 import { Container, Image, ContainerItens, Title, InputLabel, Input, Button } from './styles';
 import People from '../../assets/peopple.svg';
@@ -9,6 +10,7 @@ const App = () => {
   const [users, setUsers] = useState([])
   const inputName = useRef()
   const inputAge = useRef()
+  const navigate = useNavigate()
 
   const addNewUser = async () => {
 
@@ -17,11 +19,11 @@ const App = () => {
       age: inputAge.current.value,
 
     })
-
-    console.log(newUser)
-
     setUsers([...users, newUser]);
+
+    navigate("/Users")
   }
+
 
   return (
     <Container>
@@ -35,7 +37,7 @@ const App = () => {
         <InputLabel>Idade</InputLabel>
         <Input ref={inputAge} placeholder="Idade" />
 
-        <Button onClick={addNewUser}> Register
+        <Button  onClick={addNewUser}> Register
           <img src={Arrow} alt="seta" />
         </Button>
 
