@@ -32,19 +32,6 @@ export const ContainerItens = styled.div`
     
 `
 
-export const Title = styled.h1`
-    font-style: normal;
-    font-size: 34px;
-    font-weight: bold;
-    font-size: 34px;
-    line-height: 40px;
-    text-align: center;
-    color: #FFFFFF;
-    margin-bottom: 50px;
-
-
-`
-
 export const Button = styled.button`
     width: 342px;
     height: 74px;

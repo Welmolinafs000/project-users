@@ -2,7 +2,9 @@ import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
 
-import { Container, Image, ContainerItens, Title, Button, User } from './styles';
+import H1 from '../../components/title'
+
+import { Container, Image, ContainerItens, Button, User } from './styles';
 import Avatar from '../../assets/avatar.svg';
 import Arrow from '../../assets/arrow.svg'
 import Trash from '../../assets/trash.svg'
@@ -37,7 +39,7 @@ const Users = () => {
     <Container>
       <Image src={Avatar} alt="people" />
       <ContainerItens>
-        <Title> Users !!! </Title>
+        <H1> Users !!! </H1>
 
         <ul>
           {users.map((user) => (

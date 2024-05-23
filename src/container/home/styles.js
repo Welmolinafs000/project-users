@@ -29,19 +29,6 @@ export const ContainerItens = styled.div`
     
 `
 
-export const Title = styled.h1`
-    font-style: normal;
-    font-size: 34px;
-    font-weight: bold;
-    font-size: 34px;
-    line-height: 40px;
-    text-align: center;
-    color: #FFFFFF;
-    margin-bottom: 50px;
-
-
-`
-
 export const InputLabel = styled.p`
     letter-spacing: -0.40799999237060547px;
     font-style: normal;

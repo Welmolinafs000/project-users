@@ -2,7 +2,10 @@ import React, { useState, useRef } from "react";
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
 
-import { Container, Image, ContainerItens, Title, InputLabel, Input, Button } from './styles';
+import { Container, Image, InputLabel, Input, Button } from './styles';
+import H1 from '../../components/title';
+import ContainerItens from '../../components/ContainerItens'
+
 import People from '../../assets/peopple.svg';
 import Arrow from '../../assets/arrow.svg'
 
@@ -29,7 +32,7 @@ const App = () => {
     <Container>
       <Image src={People} alt="people" />
       <ContainerItens>
-        <Title> Hello !!! </Title>
+        <H1> Hello !!! </H1>
 
         <InputLabel>Nome</InputLabel>
         <Input ref={inputName} placeholder="Nome" />
