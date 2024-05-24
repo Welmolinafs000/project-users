@@ -1,6 +1,6 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
-export const H1 = styled.h1 `
+export const H1 = styled.h1`
     font-style: normal;
     font-size: 34px;
     font-weight: bold;
@@ -9,5 +9,5 @@ export const H1 = styled.h1 `
     text-align: center;
     color: #FFFFFF;
     margin-bottom: 50px;
-
+    
 `

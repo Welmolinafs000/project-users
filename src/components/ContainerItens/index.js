@@ -1,10 +1,8 @@
 import React from "react";
+import { ContainerItens as Container } from "./styles";
 
-import { ContainerItens as Container} from "./style";
-
-const ContainerItens = ({children}) => {
-    return <Container>{children}</Container>
-
-}
+const ContainerItens = ({ children, isBlur }) => {
+  return <Container isBlur={isBlur}>{children}</Container>;
+};
 
 export default ContainerItens;
