@@ -2,9 +2,10 @@ import React, { useState, useRef } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-import { Container, Image, InputLabel, Input, Button } from "./styles";
+import { Container, Image, InputLabel, Input } from "./styles";
 import H1 from "../../components/Title";
 import ContainerItens from "../../components/ContainerItens";
+import Button from '../../components/button'
 
 import People from "../../assets/peopple.svg";
 import Arrow from "../../assets/arrow.svg";

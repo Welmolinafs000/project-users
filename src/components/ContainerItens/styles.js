@@ -17,7 +17,8 @@ export const ContainerItens = styled.div`
   ${(props) =>
     props.isBlur &&
     `
-  backdrop-filter: blur(45px);
-  min-height: calc(100vh - 170px)
-  `}
+    backdrop-filter: blur(45px);
+    min-height: calc(100vh - 170px);
+   
+      `}
 `;

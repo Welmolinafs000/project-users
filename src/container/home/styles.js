@@ -44,38 +44,12 @@ export const Input = styled.input`
     
     line-height: 28.13px;
     color: #FFFFFF;
+    
 
     margin-bottom: 34px;
 
 
 
 `
-export const Button = styled.button`
-    width: 342px;
-    height: 74px;
-    margin-top: 130px;
 
-    border-radius: 14px ;
-    background: #000000CC;
-
-    font-size: bold;
-    font-size: 17px;
-    line-height: 28px;
-    color: #FFFFFF;
-
-    cursor: pointer;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-
-    &:hover {
-        opacity: 0.8;
-    }
-
-    &:active {
-        opacity: 0.5;
-    }
-`
 
